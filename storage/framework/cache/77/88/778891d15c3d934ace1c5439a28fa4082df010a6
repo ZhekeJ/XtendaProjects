@@ -1,0 +1,713 @@
+1600503538a:1:{s:11:"default.htm";a:5:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:15918:"<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="{{ 'assets/css/fonts/stylesheet.css'|theme}}" rel="stylesheet">
+    <link href="{{'assets/css/style.css'| theme }}" rel="stylesheet">
+
+    <link rel="icon" href="{{'assets/img/Xtenda_icon_orange.png' |theme}}" />
+    <title>Xtenda Finance - {{ this.page.title }}</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/tarkhov/postboot/v1.0.0/dist/css/postboot.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+</head>
+<style>
+    .frame {
+
+        border: 3px solid #ccc;
+        background: #ed8936;
+
+
+    }
+</style>
+
+<body>
+    <span class="hidden sm:hidden md:hidden lg:block">
+
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light border-solid border-red-500">
+
+            <div class="container">
+
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item text-center px-1 {{this.page.title == 'Home' ? 'active' : ''  }}">
+
+
+                            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span>
+
+                            </a>
+                        </li>
+                        <li class="nav-item text-center px-1 {{this.page.title == 'About' ? 'active' : ''  }}"> <a
+                                class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item text-center px-1 {{this.page.title == 'Products' ? 'active' : ''  }}"> <a
+                                class="nav-link " href="/products">Product</a>
+                        </li>
+                        <li class="nav-item text-center px-1 {{this.page.title == 'Board' ? 'active' : ''  }}"> <a
+                                class="nav-link " href="/board">Board</a>
+                        </li>
+                        <li class="nav-item text-center px-1 {{this.page.title == 'Countries' ? 'active' : ''  }}"> <a
+                                class="nav-link " href="/countries">Countries</a>
+                        </li>
+                        <li class="nav-item text-center px-1 {{this.page.title == 'Investors' ? 'active' : ''  }}"> <a
+                                class="nav-link " href="/investors">Investors</a>
+                        </li>
+                        <li class="nav-item text-center px-1 {{this.page.title == 'Contact' ? 'active' : ''  }}"> <a
+                                class="nav-link " href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div> <span class="hidden md:block">
+
+                    <ul class="navbar-nav sm:ml-auto md:mr-auto">
+
+                        <li class="mr-3">
+
+                            <div class="dropdown mt-2">
+
+                                <button type="button" class="bg-transparent dropdown-toggle outline-none"
+                                    style="outline: 0; outline:none" data-toggle="dropdown">
+
+                                    <img class="inline-block px-1"
+                                        src="{{'assets/img/Icon_international_orange_desktop.png'|theme}}" alt=""> <span
+                                        class="px-1 font-bold">International</span>
+                                </button>
+                                <!--  <div class="dropdown-menu rounded-0 mt-2"> 
+                                    <a class="dropdown-item" href="#"><img style="width: 20%; vertical-align: text-top;" src="{{'assets/img/Image_Zambia_Option card.png'|theme}}">Zambia</a> 
+                                    <a class="dropdown-item" href="#">Link 2</a>
+                                    <a class="dropdown-item" href="#">Link 3</a>
+                                </div> -->
+                            </div>
+                        </li>
+                    </ul>
+                </span> <a class="navbar-brand px-1 mr-auto md:ml-auto" href="/">
+
+
+
+                    <img src="{{'assets/img/Xtenda_icon_orange_desktop.png'|theme}}" alt="">
+
+
+
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span
+                        class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </span>
+    <span class="block sm:block md:block lg:hidden">
+
+
+
+        <nav role="navigation" class="mobile_nav">
+
+            <div id="menuToggle">
+
+
+
+                <div class="menu-logo absolute right-0 top-0">
+
+
+
+                    <img src="{{'assets/img/Mobile_menu_Xtenda icon_orange.svg'|theme}}" alt="">
+
+
+
+                </div>
+
+
+
+                <p class="font-bold text-orange-500 absolute text-center w-full top-0 left-0 mt-4">{{ this.page.title }}
+                </p>
+
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <div class="menu-logo absolute right-0 top-0">
+                        <img src="{{'assets/img/Mobile_menu_Xtenda icon_white.svg'|theme}}" alt="">
+                    </div>
+                    <li class="{{this.page.title == 'Home' ? 'active' : ''  }}">
+                        <div class="line"></div> <a class="text-white menu-font my-2 mx-1" href="/">Home</a>
+                    </li>
+                    <li class="{{this.page.title == 'About' ? 'active' : ''  }}">
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1" href="/about">About</a>
+
+                    </li>
+                    <li class="{{this.page.title == 'Products' ? 'active' : ''  }}">
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1" href="/products">Product</a>
+
+                    <li class="{{this.page.title == 'Board' ? 'active' : ''  }}">
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1" href="/board">Board</a>
+
+                    <li class="{{this.page.title == 'Countries' ? 'active' : ''  }}">
+                
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1" href="countries">Countries</a>
+
+                    </li>
+                    <li class="{{this.page.title == 'Investors' ? 'active' : ''  }}">
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1"
+                            href="/investors">Investors</a>
+
+                    </li>
+                    <li class="{{this.page.title == 'Contact' ? 'active' : ''  }}">
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1" href="/contact">Contact</a>
+
+                    </li>
+                    <!-- <li>
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1" href="#">International</a>
+
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </span>
+
+    {% page %}
+
+    <footer class="footer-area footer--light bg-white">
+        <div class="w-100 h-1 bg-orange-400"></div>
+        <div class="footer-big sm:text-center md:text-left lg:text-left">
+            <!-- start .container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="footer-widget ">
+                            <div class="widget-about flex justify-content-center">
+                                <img src="{{'assets/img/Desktop_Footer_Xtenda logo.png'|theme}}" alt="" class="w-1/2">
+                            </div>
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-md-4 -->
+                    <div class="col-md-3 col-sm-4">
+                        <div class="footer-widget">
+                            <div class="footer-menu footer-menu--1">
+                                <ul>
+                                    <li class="active"> <a href="/">Home</a>
+                                    </li>
+                                    <li> <a href="/about">About</a>
+                                    </li>
+                                    <li> <a href="/products">Product</a>
+                                    </li>
+                                    <li> <a href="/board">Board</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-md-3 -->
+                    <div class="col-md-3 col-sm-4">
+                        <div class="footer-widget">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li> <a href="/countries">Countries</a>
+                                    </li>
+                                    <li> <a href="/investors">Investors</a>
+                                    </li>
+                                    <li> <a href="/contact">Contact</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-lg-3 -->
+                    <div class="col-md-3 col-sm-4">
+                        <div class="footer-widget">
+                            <div class="footer-menu no-padding">
+                                <ul>
+                                    
+                                    <li class="flex justify-content-center my-4 block sm:hidden">
+                                        <div class="w-1/2 h-1 bg-orange-400"></div>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown mt-2">
+                                            <button type="button" class="bg-transparent dropdown-toggle outline-none"
+                                                style="outline: 0; outline:none" data-toggle="dropdown">
+                                                <img class="inline-block px-1"
+                                                    src="{{'assets/img/Icon_international_orange_desktop.png'|theme}}"
+                                                    alt=""> <span class="px-1 font-bold">International</span>
+                                            </button>
+                                            <!--   <div class="dropdown-menu rounded-0 mt-2"> <a class="dropdown-item"
+                                                    href="#">Link 1</a>
+                                                <a class="dropdown-item" href="#">Link 2</a>
+                                                <a class="dropdown-item" href="#">Link 3</a>
+                                            </div> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- Ends: .col-lg-3 -->
+                </div>
+                <!-- end /.row -->
+            </div>
+            <!-- end /.container -->
+        </div>
+        <!-- end /.footer-big -->
+        <div class="mini-footer bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-text text-center">
+                            <p>© 2020 © <span class="text-orange-500">Xtenda Financial Holdings Limited.</span> All
+                                right reserved.<span class="text-orange-500">DBF Capital Partners Limited</span> is
+                                a major shareholder.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/tarkhov/postboot/v1.0.0/dist/js/postboot.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="{{'assets/js/all.js'|theme}}"></script>
+    <script>
+        $('.product-holder').scrollspy({
+            target: '#navbar-example'
+        });
+
+        $("#menuToggle").click(function () {
+
+            console.log("toggle");
+            $(this).toggleClass('active');
+
+        });
+
+        var $jq = jQuery.noConflict();
+        $jq(document).ready(function () {
+            /*        $jq('a').click( function(event) {
+                        $jq(this).hide();
+                        event.preventDefault();
+                    });*/
+
+            $('.slider-timeline').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                dots: true,
+                prevArrow: false,
+                nextArrow: false,
+                autoplay: true,
+                autoplaySpeed: 10000,
+                responsive: [{
+                        breakpoint: 1600,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 1280,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+
+                ]
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>";s:5:"mtime";i:1595978265;s:6:"markup";s:15918:"<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="{{ 'assets/css/fonts/stylesheet.css'|theme}}" rel="stylesheet">
+    <link href="{{'assets/css/style.css'| theme }}" rel="stylesheet">
+
+    <link rel="icon" href="{{'assets/img/Xtenda_icon_orange.png' |theme}}" />
+    <title>Xtenda Finance - {{ this.page.title }}</title>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/tarkhov/postboot/v1.0.0/dist/css/postboot.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+</head>
+<style>
+    .frame {
+
+        border: 3px solid #ccc;
+        background: #ed8936;
+
+
+    }
+</style>
+
+<body>
+    <span class="hidden sm:hidden md:hidden lg:block">
+
+        <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light border-solid border-red-500">
+
+            <div class="container">
+
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item text-center px-1 {{this.page.title == 'Home' ? 'active' : ''  }}">
+
+
+                            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span>
+
+                            </a>
+                        </li>
+                        <li class="nav-item text-center px-1 {{this.page.title == 'About' ? 'active' : ''  }}"> <a
+                                class="nav-link" href="/about">About</a>
+                        </li>
+                        <li class="nav-item text-center px-1 {{this.page.title == 'Products' ? 'active' : ''  }}"> <a
+                                class="nav-link " href="/products">Product</a>
+                        </li>
+                        <li class="nav-item text-center px-1 {{this.page.title == 'Board' ? 'active' : ''  }}"> <a
+                                class="nav-link " href="/board">Board</a>
+                        </li>
+                        <li class="nav-item text-center px-1 {{this.page.title == 'Countries' ? 'active' : ''  }}"> <a
+                                class="nav-link " href="/countries">Countries</a>
+                        </li>
+                        <li class="nav-item text-center px-1 {{this.page.title == 'Investors' ? 'active' : ''  }}"> <a
+                                class="nav-link " href="/investors">Investors</a>
+                        </li>
+                        <li class="nav-item text-center px-1 {{this.page.title == 'Contact' ? 'active' : ''  }}"> <a
+                                class="nav-link " href="/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div> <span class="hidden md:block">
+
+                    <ul class="navbar-nav sm:ml-auto md:mr-auto">
+
+                        <li class="mr-3">
+
+                            <div class="dropdown mt-2">
+
+                                <button type="button" class="bg-transparent dropdown-toggle outline-none"
+                                    style="outline: 0; outline:none" data-toggle="dropdown">
+
+                                    <img class="inline-block px-1"
+                                        src="{{'assets/img/Icon_international_orange_desktop.png'|theme}}" alt=""> <span
+                                        class="px-1 font-bold">International</span>
+                                </button>
+                                <!--  <div class="dropdown-menu rounded-0 mt-2"> 
+                                    <a class="dropdown-item" href="#"><img style="width: 20%; vertical-align: text-top;" src="{{'assets/img/Image_Zambia_Option card.png'|theme}}">Zambia</a> 
+                                    <a class="dropdown-item" href="#">Link 2</a>
+                                    <a class="dropdown-item" href="#">Link 3</a>
+                                </div> -->
+                            </div>
+                        </li>
+                    </ul>
+                </span> <a class="navbar-brand px-1 mr-auto md:ml-auto" href="/">
+
+
+
+                    <img src="{{'assets/img/Xtenda_icon_orange_desktop.png'|theme}}" alt="">
+
+
+
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                    aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"> <span
+                        class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </span>
+    <span class="block sm:block md:block lg:hidden">
+
+
+
+        <nav role="navigation" class="mobile_nav">
+
+            <div id="menuToggle">
+
+
+
+                <div class="menu-logo absolute right-0 top-0">
+
+
+
+                    <img src="{{'assets/img/Mobile_menu_Xtenda icon_orange.svg'|theme}}" alt="">
+
+
+
+                </div>
+
+
+
+                <p class="font-bold text-orange-500 absolute text-center w-full top-0 left-0 mt-4">{{ this.page.title }}
+                </p>
+
+                <input type="checkbox" />
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <div class="menu-logo absolute right-0 top-0">
+                        <img src="{{'assets/img/Mobile_menu_Xtenda icon_white.svg'|theme}}" alt="">
+                    </div>
+                    <li class="{{this.page.title == 'Home' ? 'active' : ''  }}">
+                        <div class="line"></div> <a class="text-white menu-font my-2 mx-1" href="/">Home</a>
+                    </li>
+                    <li class="{{this.page.title == 'About' ? 'active' : ''  }}">
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1" href="/about">About</a>
+
+                    </li>
+                    <li class="{{this.page.title == 'Products' ? 'active' : ''  }}">
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1" href="/products">Product</a>
+
+                    <li class="{{this.page.title == 'Board' ? 'active' : ''  }}">
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1" href="/board">Board</a>
+
+                    <li class="{{this.page.title == 'Countries' ? 'active' : ''  }}">
+                
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1" href="countries">Countries</a>
+
+                    </li>
+                    <li class="{{this.page.title == 'Investors' ? 'active' : ''  }}">
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1"
+                            href="/investors">Investors</a>
+
+                    </li>
+                    <li class="{{this.page.title == 'Contact' ? 'active' : ''  }}">
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1" href="/contact">Contact</a>
+
+                    </li>
+                    <!-- <li>
+                        <div class="line"></div><a class="text-white menu-font my-2 mx-1" href="#">International</a>
+
+                    </li> -->
+                </ul>
+            </div>
+        </nav>
+    </span>
+
+    {% page %}
+
+    <footer class="footer-area footer--light bg-white">
+        <div class="w-100 h-1 bg-orange-400"></div>
+        <div class="footer-big sm:text-center md:text-left lg:text-left">
+            <!-- start .container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="footer-widget ">
+                            <div class="widget-about flex justify-content-center">
+                                <img src="{{'assets/img/Desktop_Footer_Xtenda logo.png'|theme}}" alt="" class="w-1/2">
+                            </div>
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-md-4 -->
+                    <div class="col-md-3 col-sm-4">
+                        <div class="footer-widget">
+                            <div class="footer-menu footer-menu--1">
+                                <ul>
+                                    <li class="active"> <a href="/">Home</a>
+                                    </li>
+                                    <li> <a href="/about">About</a>
+                                    </li>
+                                    <li> <a href="/products">Product</a>
+                                    </li>
+                                    <li> <a href="/board">Board</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-md-3 -->
+                    <div class="col-md-3 col-sm-4">
+                        <div class="footer-widget">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li> <a href="/countries">Countries</a>
+                                    </li>
+                                    <li> <a href="/investors">Investors</a>
+                                    </li>
+                                    <li> <a href="/contact">Contact</a>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-lg-3 -->
+                    <div class="col-md-3 col-sm-4">
+                        <div class="footer-widget">
+                            <div class="footer-menu no-padding">
+                                <ul>
+                                    
+                                    <li class="flex justify-content-center my-4 block sm:hidden">
+                                        <div class="w-1/2 h-1 bg-orange-400"></div>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown mt-2">
+                                            <button type="button" class="bg-transparent dropdown-toggle outline-none"
+                                                style="outline: 0; outline:none" data-toggle="dropdown">
+                                                <img class="inline-block px-1"
+                                                    src="{{'assets/img/Icon_international_orange_desktop.png'|theme}}"
+                                                    alt=""> <span class="px-1 font-bold">International</span>
+                                            </button>
+                                            <!--   <div class="dropdown-menu rounded-0 mt-2"> <a class="dropdown-item"
+                                                    href="#">Link 1</a>
+                                                <a class="dropdown-item" href="#">Link 2</a>
+                                                <a class="dropdown-item" href="#">Link 3</a>
+                                            </div> -->
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- Ends: .col-lg-3 -->
+                </div>
+                <!-- end /.row -->
+            </div>
+            <!-- end /.container -->
+        </div>
+        <!-- end /.footer-big -->
+        <div class="mini-footer bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-text text-center">
+                            <p>© 2020 © <span class="text-orange-500">Xtenda Financial Holdings Limited.</span> All
+                                right reserved.<span class="text-orange-500">DBF Capital Partners Limited</span> is
+                                a major shareholder.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/tarkhov/postboot/v1.0.0/dist/js/postboot.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="{{'assets/js/all.js'|theme}}"></script>
+    <script>
+        $('.product-holder').scrollspy({
+            target: '#navbar-example'
+        });
+
+        $("#menuToggle").click(function () {
+
+            console.log("toggle");
+            $(this).toggleClass('active');
+
+        });
+
+        var $jq = jQuery.noConflict();
+        $jq(document).ready(function () {
+            /*        $jq('a').click( function(event) {
+                        $jq(this).hide();
+                        event.preventDefault();
+                    });*/
+
+            $('.slider-timeline').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                dots: true,
+                prevArrow: false,
+                nextArrow: false,
+                autoplay: true,
+                autoplaySpeed: 10000,
+                responsive: [{
+                        breakpoint: 1600,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 1280,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+
+                ]
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>";s:4:"code";N;}}

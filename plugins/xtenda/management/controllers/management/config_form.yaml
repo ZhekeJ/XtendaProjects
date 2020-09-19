@@ -1,0 +1,10 @@
+name: Management
+form: $/xtenda/management/models/management/fields.yaml
+modelClass: Xtenda\Management\Models\Management
+defaultRedirect: xtenda/management/management
+create:
+    redirect: 'xtenda/management/management/update/:id'
+    redirectClose: xtenda/management/management
+update:
+    redirect: xtenda/management/management
+    redirectClose: xtenda/management/management

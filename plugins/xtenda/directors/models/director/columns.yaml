@@ -1,0 +1,14 @@
+columns:
+    name:
+        label: Name
+        type: text
+        searchable: true
+        sortable: true
+    role:
+        label: Role
+        type: text
+        sortable: true
+    active:
+        label: Status
+        type: text
+        sortable: true

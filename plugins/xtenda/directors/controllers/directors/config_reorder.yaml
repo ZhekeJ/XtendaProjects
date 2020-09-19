@@ -1,0 +1,4 @@
+title: Directors
+modelClass: Xtenda\Directors\Models\Director
+toolbar:
+    buttons: reorder_toolbar

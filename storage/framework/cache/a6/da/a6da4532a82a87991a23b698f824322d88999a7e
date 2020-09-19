@@ -1,0 +1,134 @@
+1600503535a:1:{s:13:"investors.htm";a:9:{s:8:"fileName";s:13:"investors.htm";s:7:"content";s:2771:"title = "Investors"
+url = "/investors"
+layout = "default"
+is_hidden = 0
+==
+<div id="investor-content">
+    <div class="jumbotron jumbotron-fluid bg-white ">
+        <div class="container flex justify-content-center my-5">
+            <div class="card shadow w-full sm:w-auto md:w-3/4"> <span class="dots z-0 md:z-2">
+
+
+
+         <img class="absolute" style="right: -50px;bottom: 0;width: 100px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+         <img class="absolute" style="right: -10%;bottom: 20%;width: 30px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+         <img class="absolute" style="right: -20%;bottom: 50%;width: 50px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+         <img class="absolute" style="left: -10%;top: -18%;width: 150px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+         <img class="absolute" style="left: -8%;top: 30%;width: 30px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+         <img class="absolute" style="left: -20%;top: 50%;width: 50px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+     </span>
+                <div class="card-body bg-white relative bg-white z-1 p-5">
+                    <img src="{{'assets/img/Logo_DBFCapital-2.png'|theme}}" alt="Logo_DBFCapital-2">
+                    <p class="card-text pt-3 pb-5 leading-loose pt-5 px-3">DBF Capital Partners Limited (DBF) is a Mauritius-based investment holding
+                        company focusing on private equity specifically sector-agnostic principal
+                        investing. To date, the company is invested in oil & gas, financial services
+                        and real estate. On the financial advisory side, DBF focusses on activities
+                        related to private equity, including capital raising, balance sheet restructuring,
+                        as well as mergers and acquisitions. DBF Capital Partners Limited is the
+                        majority shareholder in Xtenda Financial Holdings Limited.</p>
+                  <!--  <p class="text-right"> <a class="transition duration-200 ease-in-out bg-orange-500 hover:bg-orange-600 text-decoration-none text-white rounded-full font-bold px-5 py-3"
+                        href="#" role="button">Visit site</a>
+                    </p> -->
+                </div>
+            </div>
+        </div>
+        <div class="container my-5"> <span class="dots">
+
+
+
+          <img class="absolute" style="right: 10%;bottom: 5%;width: 70px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+          <img class="absolute" style="right: 15%;bottom: 10%;width: 30px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+
+
+      </span>
+
+        </div>
+    </div>
+
+</div>";s:5:"mtime";i:1596244930;s:6:"markup";s:2691:"<div id="investor-content">
+    <div class="jumbotron jumbotron-fluid bg-white ">
+        <div class="container flex justify-content-center my-5">
+            <div class="card shadow w-full sm:w-auto md:w-3/4"> <span class="dots z-0 md:z-2">
+
+
+
+         <img class="absolute" style="right: -50px;bottom: 0;width: 100px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+         <img class="absolute" style="right: -10%;bottom: 20%;width: 30px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+         <img class="absolute" style="right: -20%;bottom: 50%;width: 50px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+         <img class="absolute" style="left: -10%;top: -18%;width: 150px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+         <img class="absolute" style="left: -8%;top: 30%;width: 30px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+         <img class="absolute" style="left: -20%;top: 50%;width: 50px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+     </span>
+                <div class="card-body bg-white relative bg-white z-1 p-5">
+                    <img src="{{'assets/img/Logo_DBFCapital-2.png'|theme}}" alt="Logo_DBFCapital-2">
+                    <p class="card-text pt-3 pb-5 leading-loose pt-5 px-3">DBF Capital Partners Limited (DBF) is a Mauritius-based investment holding
+                        company focusing on private equity specifically sector-agnostic principal
+                        investing. To date, the company is invested in oil & gas, financial services
+                        and real estate. On the financial advisory side, DBF focusses on activities
+                        related to private equity, including capital raising, balance sheet restructuring,
+                        as well as mergers and acquisitions. DBF Capital Partners Limited is the
+                        majority shareholder in Xtenda Financial Holdings Limited.</p>
+                  <!--  <p class="text-right"> <a class="transition duration-200 ease-in-out bg-orange-500 hover:bg-orange-600 text-decoration-none text-white rounded-full font-bold px-5 py-3"
+                        href="#" role="button">Visit site</a>
+                    </p> -->
+                </div>
+            </div>
+        </div>
+        <div class="container my-5"> <span class="dots">
+
+
+
+          <img class="absolute" style="right: 10%;bottom: 5%;width: 70px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+          <img class="absolute" style="right: 15%;bottom: 10%;width: 30px;" src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+
+
+
+
+      </span>
+
+        </div>
+    </div>
+
+</div>";s:4:"code";N;s:5:"title";s:9:"Investors";s:3:"url";s:10:"/investors";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

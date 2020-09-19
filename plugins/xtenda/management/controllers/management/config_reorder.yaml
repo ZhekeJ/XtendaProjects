@@ -1,0 +1,4 @@
+title: Management
+modelClass: Xtenda\Management\Models\Management
+toolbar:
+    buttons: reorder_toolbar

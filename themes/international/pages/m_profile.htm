@@ -1,0 +1,72 @@
+title = "M_Profile"
+url = "/profile/:slug"
+layout = "default"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Xtenda\Management\Models\Management"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "name"
+notFoundMessage = "Record not found"
+==
+<div id="profile-content">
+
+    {% set record = builderDetails.record %}
+    {% set displayColumn = builderDetails.displayColumn %}
+    {% set notFoundMessage = builderDetails.notFoundMessage %}
+    
+        <div class="jumbotron jumbotron-fluid pb-0" style="background: url('/themes/international/background.png'); background-size: cover; background-repeat: no-repeat;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm flex align-items-center">
+                        <div>
+                             <h5 class="pl-5 pt-2">
+    
+                        <a href="/board" class="font-bold text-white hover:text-black">
+    
+                            <img class="img-fluid inline-block " src="{{'assets/img/Icon_arrow left_white.png'|theme}}" alt=""> Back
+    
+                        </a>
+    
+                    </h5>
+                             <h1 class="pl-5 font-bold text-white">
+    
+                       {{record.name}}
+    
+                    </h1>
+                            <p class="text-white pl-5">{{record.role}}</p>
+                            <p> <a href="#">
+    
+                           <!-- <img src="img/follow.png" alt=""> -->
+    
+                        </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <img class="img-fluid frame" src="{{record.manager_photo.thumb(350,500,{'mode' : 'crop'})}}" alt="" >
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="jumbotron jumbotron-fluid bg-white">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="text-center">
+                        <img class="inline-block"  src="{{'assets/img/Icon_work experience bubble.png'|theme}}" alt="Card image cap">
+                        <div class="card-body pb-0">
+                            <p class="text-left">{{record.experience | raw}}</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <img class="inline-block" src="{{'assets/img/Icon_education bubble.png'|theme}}" alt="Card image cap">
+                        <div class="card-body pb-0">
+                            <p class="text-left">{{record.education | raw}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>

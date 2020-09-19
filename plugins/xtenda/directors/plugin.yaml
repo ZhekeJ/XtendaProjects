@@ -1,0 +1,11 @@
+plugin:
+    name: 'xtenda.directors::lang.plugin.name'
+    description: 'xtenda.directors::lang.plugin.description'
+    author: xtenda
+    icon: oc-icon-user-secret
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Directors
+        url: xtenda/directors/directors
+        icon: icon-user-secret

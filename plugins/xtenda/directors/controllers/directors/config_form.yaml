@@ -1,0 +1,10 @@
+name: Directors
+form: $/xtenda/directors/models/director/fields.yaml
+modelClass: Xtenda\Directors\Models\Director
+defaultRedirect: xtenda/directors/directors
+create:
+    redirect: 'xtenda/directors/directors/update/:id'
+    redirectClose: xtenda/directors/directors
+update:
+    redirect: xtenda/directors/directors
+    redirectClose: xtenda/directors/directors

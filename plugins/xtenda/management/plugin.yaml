@@ -1,0 +1,11 @@
+plugin:
+    name: 'xtenda.management::lang.plugin.name'
+    description: 'xtenda.management::lang.plugin.description'
+    author: xtenda
+    icon: oc-icon-users
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Management
+        url: xtenda/management/management
+        icon: icon-users

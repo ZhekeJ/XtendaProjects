@@ -1,0 +1,148 @@
+1600503534a:1:{s:9:"board.htm";a:11:{s:8:"fileName";s:9:"board.htm";s:7:"content";s:3234:"title = "Board"
+url = "/board"
+layout = "default"
+is_hidden = 0
+
+[builderList]
+modelClass = "Xtenda\Directors\Models\Director"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+
+[builderList builderList2]
+modelClass = "Xtenda\Management\Models\Management"
+scope = "-"
+scopeValue = "{{ :scope }}"
+displayColumn = "name"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+==
+<div id="board-content">
+    <div class="jumbotron jumbotron-fluid bg-white">
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-lg">
+                    <h1 class="font-bold ml-3">Directors of Xtenda Finance </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <span class="dots">
+
+
+
+                    <img class="absolute" style="right: 10%;top: 10%;width: 70px;"
+                        src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+                    <img class="absolute" style="right: 15%;top: 15%;width: 30px;"
+                        src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+                    <img class="absolute" style="left: 8%;bottom: 0;width: 150px;"
+                        src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+                    <img class="absolute" style="left: 5%;bottom: 5%;width: 30px;"
+                        src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+                </span>
+
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+
+    {% for record in records %}
+    <div class="col-sm-6 col-lg-4 card-col">
+                <div class="custom-card">
+                    <div class="card-top">
+                        <img class="card-img-top" src="{{record.director_photo.thumb(350,500,{'mode' : 'crop'})}}"
+                            alt="Card image cap">
+                    </div>
+                    <div class="card-bototm text-center">
+                        <h5 class="card-title">{{record.name}} {{record.surname}}</h5>
+                        <div class="desig"><span class="">{{record.role}}</span></div>
+
+
+                        <div> {% spaceless %}
+                            {% if detailsPage %}
+                            <a class="text-primary"
+                                href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
+                                {% endif %}
+
+                                View Profile
+
+                                {% if detailsPage %}
+                            </a>
+                            {% endif %}
+                            {% endspaceless %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+    {% endfor %}";s:5:"mtime";i:1598390445;s:6:"markup";s:2654:"<div id="board-content">
+    <div class="jumbotron jumbotron-fluid bg-white">
+        <div class="container">
+            <div class="row my-4">
+                <div class="col-lg">
+                    <h1 class="font-bold ml-3">Directors of Xtenda Finance </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center"> <span class="dots">
+
+
+
+                    <img class="absolute" style="right: 10%;top: 10%;width: 70px;"
+                        src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+                    <img class="absolute" style="right: 15%;top: 15%;width: 30px;"
+                        src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+                    <img class="absolute" style="left: 8%;bottom: 0;width: 150px;"
+                        src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+
+                    <img class="absolute" style="left: 5%;bottom: 5%;width: 30px;"
+                        src="{{'assets/img/CIRCLE.svg'|theme}}" alt="">
+                </span>
+
+{% set records = builderList.records %}
+{% set displayColumn = builderList.displayColumn %}
+{% set noRecordsMessage = builderList.noRecordsMessage %}
+{% set detailsPage = builderList.detailsPage %}
+{% set detailsKeyColumn = builderList.detailsKeyColumn %}
+{% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+
+    {% for record in records %}
+    <div class="col-sm-6 col-lg-4 card-col">
+                <div class="custom-card">
+                    <div class="card-top">
+                        <img class="card-img-top" src="{{record.director_photo.thumb(350,500,{'mode' : 'crop'})}}"
+                            alt="Card image cap">
+                    </div>
+                    <div class="card-bototm text-center">
+                        <h5 class="card-title">{{record.name}} {{record.surname}}</h5>
+                        <div class="desig"><span class="">{{record.role}}</span></div>
+
+
+                        <div> {% spaceless %}
+                            {% if detailsPage %}
+                            <a class="text-primary"
+                                href="{{ detailsPage|page({ (detailsUrlParameter): attribute(record, detailsKeyColumn) }) }}">
+                                {% endif %}
+
+                                View Profile
+
+                                {% if detailsPage %}
+                            </a>
+                            {% endif %}
+                            {% endspaceless %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+    {% endfor %}";s:4:"code";N;s:5:"title";s:5:"Board";s:3:"url";s:6:"/board";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:8:{s:10:"modelClass";s:32:"Xtenda\Directors\Models\Director";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"name";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}s:24:"builderList builderList2";a:8:{s:10:"modelClass";s:35:"Xtenda\Management\Models\Management";s:5:"scope";s:1:"-";s:10:"scopeValue";s:12:"{{ :scope }}";s:13:"displayColumn";s:4:"name";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}

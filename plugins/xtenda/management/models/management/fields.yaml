@@ -1,0 +1,53 @@
+fields:
+    name:
+        label: Name
+        span: auto
+        required: 1
+        type: text
+    linkedin:
+        label: 'LinkedIn Profile'
+        span: auto
+        type: text
+    manager_photo:
+        label: 'Manager Photo'
+        mode: image
+        imageWidth: '100'
+        imageHeight: '100'
+        useCaption: true
+        thumbOptions:
+            mode: crop
+            extension: auto
+        span: auto
+        type: fileupload
+    role:
+        label: Role
+        options:
+            'Chief Finance Officer': 'Chief Finance Officer'
+            'Head of IT': 'Head of IT'
+            'Head of Operations': 'Head of Operations'
+        showSearch: true
+        span: auto
+        placeholder: '1'
+        type: dropdown
+    experience:
+        label: Experience
+        size: small
+        span: full
+        type: richeditor
+    education:
+        label: Education
+        size: small
+        span: full
+        type: richeditor
+    slug:
+        label: Slug
+        span: auto
+        preset:
+            field: name
+            type: slug
+        type: text
+    active:
+        label: Active
+        span: auto
+        cssClass: mt-5
+        type: checkbox
